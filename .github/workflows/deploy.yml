@@ -24,7 +24,7 @@ jobs:
           echo "🚀 Deploying HMS..."
 
           if [ ! -d "/var/www/hms-infra" ]; then
-            git clone https://github.com/2manoj1/hms-infra.git /var/www/hms-infra
+            git clone https://github.com/sdaezeu/hms-infra.git /var/www/hms-infra
           fi
 
           cd /var/www/hms-infra

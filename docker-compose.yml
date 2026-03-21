@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   frontend:
-    image: ghcr.io/2manoj1/hms-frontend:latest
+    image: ghcr.io/sdaezeu/hms-frontend:latest
     container_name: hms-frontend
     restart: always
     ports:
@@ -11,7 +11,7 @@ services:
       - backend
 
   backend:
-    image: ghcr.io/2manoj1/hms-backend:latest
+    image: ghcr.io/sdaezeu/hms-backend:latest
     container_name: hms-backend
     restart: always
     ports:
