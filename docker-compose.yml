@@ -5,6 +5,8 @@ services:
     image: ghcr.io/2manoj1/hms-frontend:latest
     container_name: hms-frontend
     restart: always
+    ports:
+      - "3000:3000"
     depends_on:
       - backend
 
