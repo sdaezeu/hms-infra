@@ -28,6 +28,9 @@ services:
       - PGUSER=postgres
       - PGPASSWORD=postgres
       - PGDATABASE=medicarehms
+      - BASE_URL=http://localhost:4000
+      - UPLOADS_DIR=uploads
+      - UPLOADS_URL_PREFIX=/uploads
 
   db:
     image: postgres:15
@@ -39,6 +42,10 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
+      BASE_URL: ${BASE_URL}
+      UPLOADS_DIR: ${UPLOADS_DIR}
+      UPLOADS_URL_PREFIX: ${UPLOADS_URL_PREFIX}
+      
     volumes:
       - db_data:/var/lib/postgresql/data
     healthcheck:
